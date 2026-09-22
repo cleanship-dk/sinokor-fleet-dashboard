@@ -1,0 +1,26 @@
+# Client data stays out of the repo by default.
+# The workbook holds Sinokor's fleet, vessel PIC email addresses, invoice amounts and pricing.
+# The app shows an upload prompt when the folder is empty, so it still runs without these.
+data/*.xlsx
+data/*.xlsm
+data/*.xls
+data/watchlist.json
+data/_deleted/
+
+# Streamlit secrets (app password, any API keys) - never commit these.
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
